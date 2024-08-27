@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "antd";
-import { FaHeart } from "react-icons/fa";
+import { FaHeart ,FaRegHeart  } from "react-icons/fa";
 import { useStateValue } from "@/context/index";
 import { Image } from 'antd';
 
@@ -31,14 +31,21 @@ const Products = ({ data, loading }) => {
           </p>
         </div>
         <div className="absolute top-0 right-0">
+          <div>
           <button
+
             onClick={() =>
               dispatch({ type: "TOGGLE_WISHLIST", payload: product })
             }
-            className="rounded-[0_7px] px-[15px] text-[20px] text-[#0004fe] py-[10px] bg-[#ffffff]"
-          >
-            <FaHeart />
+            className="rounded-[0_7px] text-[20px] px-[15px]   py-[10px] bg-[#ffffff]"
+            >
+            {wishlist?.some(item =>item.id === product.id)?
+            <FaHeart className="text-[red]"/>
+            :
+            <FaRegHeart  />
+            }
           </button>
+          </div>
           
         </div>
       </Card>

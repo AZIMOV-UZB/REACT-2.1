@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./header.css";
-import { CiHeart } from "react-icons/ci";
+import { FaHeart ,FaRegHeart  } from "react-icons/fa";
 import { IoPersonOutline } from "react-icons/io5";
 import { RiMenu2Fill } from "react-icons/ri";
 import { Link, NavLink } from "react-router-dom";
@@ -36,7 +36,7 @@ const Hader = () => {
             LOGOUT
           </button>
               <div className="flex items-center gap-1">
-                <CiHeart className="text-[24px] " />
+                <FaRegHeart  className="text-[25px] " />
                 <sup className="p-3 rounded-full
  text-[#fff] bg-green-500">{wishlist.length}</sup>
                 <NavLink
