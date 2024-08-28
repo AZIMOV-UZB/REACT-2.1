@@ -29,9 +29,9 @@ const Login = () => {
   };
 
   return (
-    <div className="flex h-screen items-center justify-center">
+    <div className="flex h-screen items-center justify-center ">
       {contextHolder}
-      <div className=" w-[400px]">
+      <div className=" w-[400px] border p-5 rounded-lg py-10">
         <h3 className="text-center text-3xl mb-3">Login</h3>
         <Form
           className=""
@@ -44,13 +44,17 @@ const Login = () => {
           onFinishFailed={onFinishFailed}
           autoComplete="off"
         >
+              <div className=" my-4">
+            <p className="text-xl font-[400]">  Username : emilys</p>
+            <p className="text-xl font-[400]">  Password : emilyspass</p>
+              </div>
           <Form.Item
             label="Username"
             name="username"
             rules={[
               {
                 required: true,
-                message: "Ism kiriting!",
+                message: "Username kiriting!",
               },
             ]}
           >
@@ -63,7 +67,7 @@ const Login = () => {
             rules={[
               {
                 required: true,
-                message: "Please input your password!",
+                message: "Password kiriting!",
               },
             ]}
           >

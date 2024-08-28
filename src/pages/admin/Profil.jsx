@@ -17,16 +17,16 @@ const Profil = () => {
         </div>
         <div className="flex justify-between mt-52">
           <div className="">
-            <p className="text-[20px] font-[700] p-2 ">Email</p>
+            <p className="text-[20px] font-[700] p-2 "> Username</p>
             <div className="border p-2  ">
               {" "}
-              <p className="font-[700]">abduvorisazimov787@gmail.com</p>
+              <p className="font-[700]">emilys</p>
             </div>
           </div>
           <div>
-            <p className="text-[20px] font-[700] p-2 ">Parol</p>
+            <p className="text-[20px] font-[700] p-2 ">Password</p>
             <input 
-              value={12345678}
+              value={emilyspas}
               className="py-[4px] bg-inherit border p-2 outline-none font-[700]  "
               type="password"
             />
