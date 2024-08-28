@@ -37,7 +37,7 @@ const Hader = () => {
           </button>
               <div className="flex items-center gap-1">
                 <FaRegHeart  className="text-[25px] " />
-                <sup className="p-3 rounded-full
+                <sup className="py-3 px-2 rounded-full
  text-[#fff] bg-green-500">{wishlist.length}</sup>
                 <NavLink
                   className={

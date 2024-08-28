@@ -26,7 +26,7 @@ const Profil = () => {
           <div>
             <p className="text-[20px] font-[700] p-2 ">Password</p>
             <input 
-              value={emilyspas}
+              value={12345678}
               className="py-[4px] bg-inherit border p-2 outline-none font-[700]  "
               type="password"
             />
